@@ -3,4 +3,4 @@ Peer-graded Assignment: Course project - Shiny Application and Reproducible Pitc
 
 Instruction: https://maars-lab.shinyapps.io/ShinyApplicationInstruction/
 
-Presentation: https://maars-lab.shinyapps.io/ShinyApplicationPresentation/
+Presentation: https://rpubs.com/maars-lab/shiny-app
