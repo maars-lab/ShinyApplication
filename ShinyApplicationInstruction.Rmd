@@ -6,7 +6,7 @@ output: html_document
 runtime: shiny
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -23,3 +23,4 @@ In conclusion, although the models differ from each other, the car weight and mi
 
 ## Further documentation
 All files can be found on [Github](https://github.com/maars-lab/ShinyApplication).
+
