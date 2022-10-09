@@ -1,0 +1,27 @@
+---
+title: "ShinyApplicationInstruction"
+author: "maars-lab"
+date: "2022-10-09"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This R Markdown document is made interactive using Shiny. Unlike the more traditional workflow of creating static reports, you can now create documents that allow your readers to change the assumptions underlying your analysis and see the results immediately. 
+
+To learn more, see [Interactive Documents](http://rmarkdown.rstudio.com/authoring_shiny.html).
+
+## Inputs and Outputs
+Run Shiny ui.R and server.R: 
+```{r shinyApplication, echo=FALSE}
+shinyAppDir(
+  system.file("https://github.com/maars-lab/ShinyApplication/tree/main/ShinyApplication", package = "shiny"),
+  options = list(
+    width = "100%", height = 550
+  )
+)
+```
+
