@@ -4,10 +4,10 @@ username:
 account: maars-lab
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
-appId: 7255219
-bundleId: 6384757
+appId: 7255466
+bundleId: 6384874
 url: https://maars-lab.shinyapps.io/ShinyApplicationInstruction/
-when: 1665327070.4741
-lastSyncTime: 1665327070.47411
+when: 1665330736.85487
+lastSyncTime: 1665330736.85488
 asMultiple: FALSE
 asStatic: FALSE

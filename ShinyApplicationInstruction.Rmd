@@ -10,12 +10,12 @@ runtime: shiny
 Run Shiny ui.R and server.R by using this [link](https://maars-lab.shinyapps.io/ShinyApplication/).  
 
 ## The model explained
-Pick the weight of the car in 1000 lbs using the slider: You will get the predicted miles per gallong from Model 1 [defined as lm(mpg ~ wt)] and predicted miles per gallon from Model 2 [defined as lm(mpg ~ wtif + wt)]. wtif is defined as [ifelse(wt - 3 > 0, wt - 3, 0)]. 
+By selecting the car weight in 1000 lbs [wt] using the slider, the output generates a prediction of mpg from Model 1 [defined as lm(mpg ~ wt)] and a prediction of mpg from Model 2 [defined as lm(mpg ~ wtif + wt)]. The wtif in Model 2 is defined as [ifelse(wt - 3 > 0, wt - 3, 0)]. 
 
-While in Model 1 only a linear model is used, in Model 2 a hockey-stick calculation is applied where the break-point is defined at 3000 lbs weight. Hence, we are able to compare the effects of car weights and the differences of these two different models on miles per gallon. 
+While in Model 1 only a linear model is used, in Model 2 a hockey-stick calculation is applied where the break-point is defined at 3000 lbs car weight. Therefore, we are able to compare the effect of weight on miles per gallon and the differences in these two models.
 
 ### Conclusion
-In conclusion, although the models differ from each other, the car weight and miles per gallon have a negative correlation to each other. That means, the higher the weight [wt] the less miles per gallon [mpg] and vice versa. 
+In conclusion, although the models differ from each other, car weight and miles per gallon have a negative correlation to each other. That means, the higher the weight [wt] the less miles per gallon [mpg] and vice versa. 
 
 ## Further documentation
 All files can be found on [Github](https://github.com/maars-lab/ShinyApplication).
