@@ -1,4 +1,6 @@
 # ShinyApplication
-Peer-graded Assignment: Course Project: Shiny Application and Reproducible Pitch
+Peer-graded Assignment: Course project - Shiny Application and Reproducible Pitch
 
-For further information see instruction: ShinyApplicationInstruction.Rmd
+How to use the Shiny Application - instruction: ShinyApplicationInstruction.Rmd
+
+Presentation: 
