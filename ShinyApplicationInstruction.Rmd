@@ -10,18 +10,16 @@ runtime: shiny
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This R Markdown document is made interactive using Shiny. Unlike the more traditional workflow of creating static reports, you can now create documents that allow your readers to change the assumptions underlying your analysis and see the results immediately. 
+## How to run the Shiny App
+Run Shiny ui.R and server.R by using this [link](https://maars-lab.shinyapps.io/ShinyApplication/).  
 
-To learn more, see [Interactive Documents](http://rmarkdown.rstudio.com/authoring_shiny.html).
+## The model explained
+Pick the weight of the car in 1000 lbs using the slider: You will get the predicted miles per gallong from Model 1 [defined as lm(mpg ~ wt)] and predicted miles per gallon from Model 2 [defined as lm(mpg ~ wtif + wt)]. wtif is defined as [ifelse(wt - 3 > 0, wt - 3, 0)]. 
 
-## Inputs and Outputs
-Run Shiny ui.R and server.R: 
-```{r shinyApplication, echo=FALSE}
-shinyAppDir(
-  system.file("https://github.com/maars-lab/ShinyApplication/tree/main/ShinyApplication", package = "shiny"),
-  options = list(
-    width = "100%", height = 550
-  )
-)
-```
+While in Model 1 only a linear model is used, in Model 2 a hockey-stick calculation is applied where the break-point is defined at 3000 lbs weight. Hence, we are able to compare the effects of car weights and the differences of these two different models on miles per gallon. 
 
+## Conclusion
+In conclusion, although the models differ from each other, the car weight and miles per gallon have a negative correlation to each other. That means, the higher the weight [wt] the less miles per gallon [mpg] and vice versa. 
+
+## Further documentation
+All files can be found on [Github](https://github.com/maars-lab/ShinyApplication).
