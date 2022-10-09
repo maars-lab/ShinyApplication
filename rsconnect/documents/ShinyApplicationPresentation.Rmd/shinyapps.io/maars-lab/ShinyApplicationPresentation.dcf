@@ -1,0 +1,13 @@
+name: ShinyApplicationPresentation
+title: ShinyApplicationPresentation
+username:
+account: maars-lab
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7256661
+bundleId: 6385323
+url: https://maars-lab.shinyapps.io/ShinyApplicationPresentation/
+when: 1665346229.70018
+lastSyncTime: 1665346229.70021
+asMultiple: FALSE
+asStatic: FALSE
