@@ -9,7 +9,7 @@
 
 library(shiny)
 
-# Define UI for application that draws a histogram
+# Define UI for application to plot
 shinyUI(fluidPage(
 
     # Application title

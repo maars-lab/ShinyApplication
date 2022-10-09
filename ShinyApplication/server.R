@@ -9,7 +9,7 @@
 
 library(shiny)
 
-# Define server logic required to draw a histogram
+# Define server logic required to plot
 shinyServer(function(input, output) {
         mtcars$wtif <- ifelse(mtcars$wt - 3 > 0, mtcars$wt - 3, 0) 
         model1 <- lm(mpg ~ wt, data = mtcars)
